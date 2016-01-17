@@ -26,3 +26,9 @@
 *.exe
 *.out
 *.app
+
+# Platformio related files
+.pioenvs
+
+# Sensitive files
+credentials.h
