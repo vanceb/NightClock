@@ -117,7 +117,9 @@ void fadeTime() {
         }
         if (i == sec_seg) {
             strip.setPixelColor(i, mixColors(strip.getPixelColor(i), fadeColor(col_seconds, 5-sec_fraction)));
-            strip.setPixelColor((i+1) % 12, mixColors(strip.getPixelColor((i+1)%12), fadeColor(col_seconds, sec_fraction)));
+        }
+        if (((i + 11) % 12) == sec_seg) {
+            strip.setPixelColor(i, mixColors(strip.getPixelColor(i), fadeColor(col_seconds, sec_fraction)));
         }
         if (strip.getPixelColor(i) == 0) {
             strip.setPixelColor(i, col_background);
@@ -158,9 +160,9 @@ uint32_t mixColors(uint32_t c1, uint32_t c2) {
 
 uint32_t fadeColor(uint32_t c, uint8_t proportion) {
     uint8_t
-      r = ((uint8_t)(c >> 16)) * proportion / 5,
-      g = ((uint8_t)(c >> 8)) * proportion / 5,
-      b = ((uint8_t)c) * proportion / 5;
+      r = (uint8_t)((c >> 16) * proportion / 5),
+      g = (uint8_t)((c >> 8) * proportion / 5),
+      b = (uint8_t)(c * proportion / 5);
     return strip.Color(r,g,b);
 }
 
