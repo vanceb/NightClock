@@ -45,6 +45,7 @@ uint32_t col_seconds = strip.Color(0,255,0);
 uint32_t col_background = strip.Color(1,1,1);
 
 uint8_t min_brightness = 20;
+uint32_t last_updated = millis();
 uint8_t disp_update_period = 200;
 uint8_t ntp_sync_interval = 15;
 
@@ -258,11 +259,15 @@ void setup() {
         showStatus();
         delay(disp_update_period);
     }
+    last_updated = millis();
     // Set the sync interval to something more reasonable
     setSyncInterval(ntp_sync_interval);
 }
 
 void loop() {
-    updateDisplay();
-    delay(disp_update_period);
+    if(last_updated + disp_update_period < millis()){
+        last_updated = millis();
+        updateDisplay();
+    }
+    yield();
 }
