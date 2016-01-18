@@ -44,6 +44,7 @@ uint32_t col_minutes = strip.Color(0,0,255);
 uint32_t col_seconds = strip.Color(0,255,0);
 uint32_t col_background = strip.Color(1,1,1);
 
+uint8_t min_brightness = 20;
 uint8_t disp_update_period = 200;
 uint8_t ntp_sync_interval = 15;
 
@@ -128,8 +129,13 @@ void fadeTime() {
 }
 
 void ambientLight(){
-    // Read LDR Here and then...
-    strip.setBrightness(128);
+    // Read LDR Value
+    uint8_t brightness = (uint8_t)((1024 - analogRead(A0)) / 4);
+    if(brightness < min_brightness) {
+        brightness = min_brightness;
+    }
+    //Set Brightness of the Neopixels
+    strip.setBrightness(brightness);
 }
 
 void updateDisplay(){
@@ -230,6 +236,8 @@ void sendNTPpacket(IPAddress &address)
 
 
 void setup() {
+    // Setup ADC Input pin
+    pinMode(A0, INPUT);
     // Neopixels Setup
     strip.begin();
     showStatus();
