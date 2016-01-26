@@ -1,0 +1,805 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:lc="http://www.librecad.org" xmlns:xlink="http://www.w3.org/1999/xlink" width="614.81626862mm" height="526.0964767mm" viewBox="0 0 614.81626862 526.0964767">
+    <g lc:layername="Back" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1">
+        <line x1="283.38425296" y1="515.89685029" x2="336.61574704" y2="515.89685029"/>
+        <path d="M336.61574704,515.89685029 A100,100 0 1,0 283.38425296,515.89685029 "/>
+        <circle cx="377.17514421" cy="486.67903828" r="1"/>
+        <circle cx="242.82485579" cy="486.67903828" r="1"/>
+        <circle cx="242.82485579" cy="352.32874985" r="1"/>
+        <circle cx="377.17514421" cy="352.32874985" r="1"/>
+    </g>
+    <g lc:layername="Base Floor" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1">
+        <path d="M435.56168704,426.82978795 A5,5 0 0,0 440.56168704,431.82978795 "/>
+        <path d="M590.56168704,431.82978795 A5,5 0 0,0 595.56168704,426.82978795 "/>
+        <line x1="595.56168704" y1="426.82978795" x2="595.56168704" y2="356.82978795"/>
+        <path d="M595.56168704,356.82978795 A5,5 0 0,0 590.56168704,351.82978795 "/>
+        <line x1="440.56168704" y1="351.82978795" x2="590.56168704" y2="351.82978795"/>
+        <line x1="435.56168704" y1="426.82978795" x2="435.56168704" y2="356.82978795"/>
+        <path d="M440.56168704,351.82978795 A5,5 0 0,0 435.56168704,356.82978795 "/>
+        <line x1="440.56168704" y1="431.82978795" x2="590.56168704" y2="431.82978795"/>
+        <circle cx="590.56168704" cy="356.82978795" r="1"/>
+        <circle cx="590.56168704" cy="426.82978795" r="1"/>
+        <circle cx="440.56168704" cy="426.82978795" r="1"/>
+        <circle cx="440.56168704" cy="356.82978795" r="1"/>
+    </g>
+    <g lc:layername="Base Main" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1">
+        <path d="M434.81626862,290.42975484 A5,5 0 0,0 439.81626862,295.42975484 "/>
+        <path d="M589.81626862,295.42975484 A5,5 0 0,0 594.81626862,290.42975484 "/>
+        <line x1="594.81626862" y1="290.42975484" x2="594.81626862" y2="220.42975484"/>
+        <path d="M594.81626862,220.42975484 A5,5 0 0,0 589.81626862,215.42975484 "/>
+        <line x1="439.81626862" y1="215.42975484" x2="589.81626862" y2="215.42975484"/>
+        <line x1="434.81626862" y1="290.42975484" x2="434.81626862" y2="220.42975484"/>
+        <path d="M439.81626862,215.42975484 A5,5 0 0,0 434.81626862,220.42975484 "/>
+        <path d="M442.81626862,285.42975484 A2,2 0 0,0 444.81626862,287.42975484 "/>
+        <line x1="444.81626862" y1="287.42975484" x2="477.81626862" y2="287.42975484"/>
+        <path d="M477.81626862,287.42975484 A2,2 0 0,0 479.81626862,285.42975484 "/>
+        <line x1="479.81626862" y1="285.42975484" x2="479.81626862" y2="244.42975484"/>
+        <path d="M481.81626862,242.42975484 A2,2 0 0,0 479.81626862,244.42975484 "/>
+        <line x1="481.81626862" y1="242.42975484" x2="547.81626862" y2="242.42975484"/>
+        <path d="M549.81626862,244.42975484 A2,2 0 0,0 547.81626862,242.42975484 "/>
+        <line x1="549.81626862" y1="285.42975484" x2="549.81626862" y2="244.42975484"/>
+        <path d="M549.81626862,285.42975484 A2,2 0 0,0 551.81626862,287.42975484 "/>
+        <line x1="551.81626862" y1="287.42975484" x2="584.81626862" y2="287.42975484"/>
+        <path d="M584.81626862,287.42975484 A2,2 0 0,0 586.81626862,285.42975484 "/>
+        <line x1="586.81626862" y1="285.42975484" x2="586.81626862" y2="225.42975484"/>
+        <path d="M586.81626862,225.42975484 A2,2 0 0,0 584.81626862,223.42975484 "/>
+        <line x1="444.81626862" y1="223.42975484" x2="584.81626862" y2="223.42975484"/>
+        <line x1="442.81626862" y1="285.42975484" x2="442.81626862" y2="225.42975484"/>
+        <path d="M444.81626862,223.42975484 A2,2 0 0,0 442.81626862,225.42975484 "/>
+        <path d="M489.20052242,250.17975484 A1,1 0 0,0 488.20052242,251.17975484 "/>
+        <line x1="489.20052242" y1="250.17975484" x2="540.43201777" y2="250.17975484"/>
+        <path d="M541.43201777,251.17975484 A1,1 0 0,0 540.43201777,250.17975484 "/>
+        <line x1="541.43201777" y1="259.67975484" x2="541.43201777" y2="251.17975484"/>
+        <path d="M540.43201777,260.67975484 A1,1 0 0,0 541.43201777,259.67975484 "/>
+        <line x1="489.20052242" y1="260.67975484" x2="540.43201777" y2="260.67975484"/>
+        <line x1="488.20052242" y1="259.67975484" x2="488.20052242" y2="251.17975484"/>
+        <path d="M488.20052242,259.67975484 A1,1 0 0,0 489.20052242,260.67975484 "/>
+        <line x1="439.81626862" y1="295.42975484" x2="561.31626862" y2="295.42975484"/>
+        <path d="M561.31626862,295.42975484 A1,1 0 0,0 562.31626862,294.42975484 "/>
+        <line x1="562.31626862" y1="294.42975484" x2="562.31626862" y2="291.42975484"/>
+        <path d="M563.31626862,290.42975484 A1,1 0 0,0 562.31626862,291.42975484 "/>
+        <line x1="563.31626862" y1="290.42975484" x2="573.31626862" y2="290.42975484"/>
+        <path d="M574.31626862,291.42975484 A1,1 0 0,0 573.31626862,290.42975484 "/>
+        <line x1="574.31626862" y1="294.42975484" x2="574.31626862" y2="291.42975484"/>
+        <line x1="589.81626862" y1="295.42975484" x2="575.31626862" y2="295.42975484"/>
+        <path d="M574.31626862,294.42975484 A1,1 0 0,0 575.31626862,295.42975484 "/>
+    </g>
+    <g lc:layername="Base Top" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1">
+        <path d="M490.13336366,480.49866279 A1,1 0 0,0 489.13336366,481.49866279 "/>
+        <line x1="490.13336366" y1="480.49866279" x2="541.364859" y2="480.49866279"/>
+        <path d="M542.364859,481.49866279 A1,1 0 0,0 541.364859,480.49866279 "/>
+        <line x1="542.364859" y1="489.99866279" x2="542.364859" y2="481.49866279"/>
+        <path d="M541.364859,490.99866279 A1,1 0 0,0 542.364859,489.99866279 "/>
+        <line x1="490.13336366" y1="490.99866279" x2="541.364859" y2="490.99866279"/>
+        <line x1="489.13336366" y1="489.99866279" x2="489.13336366" y2="481.49866279"/>
+        <path d="M489.13336366,489.99866279 A1,1 0 0,0 490.13336366,490.99866279 "/>
+        <path d="M435.74910985,520.74866279 A5,5 0 0,0 440.74910985,525.74866279 "/>
+        <path d="M590.74910985,525.74866279 A5,5 0 0,0 595.74910985,520.74866279 "/>
+        <line x1="595.74910985" y1="520.74866279" x2="595.74910985" y2="450.74866279"/>
+        <path d="M595.74910985,450.74866279 A5,5 0 0,0 590.74910985,445.74866279 "/>
+        <line x1="440.74910985" y1="445.74866279" x2="590.74910985" y2="445.74866279"/>
+        <line x1="435.74910985" y1="520.74866279" x2="435.74910985" y2="450.74866279"/>
+        <path d="M440.74910985,445.74866279 A5,5 0 0,0 435.74910985,450.74866279 "/>
+        <line x1="440.74910985" y1="525.74866279" x2="590.74910985" y2="525.74866279"/>
+    </g>
+    <g lc:layername="Front" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1">
+        <circle cx="100" cy="419.50389407" r="25"/>
+        <g lc:blockname="Face Cutout">
+            <g lc:layername="Back" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Base Floor" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Base Main" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Base Top" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Front" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1">
+                <path d="M253,150.12242418 A1,1 0 0,0 253.89473684,151.11686858 "/>
+                <path d="M265.02428038,154.09902079 A37,37 0 0,0 253.89473684,151.11686858 "/>
+                <path d="M265.02428038,154.09902079 A1,1 0 0,0 266.29636742,153.68517509 "/>
+                <line x1="290.85592245" y1="111.14677796" x2="266.29636742" y2="153.68517509"/>
+                <path d="M290.85592245,111.14677796 A1,1 0 0,0 290.44955104,109.75867987 "/>
+                <path d="M290.44955104,109.75867987 A88,88 0 0,0 254.04597701,100.00437161 "/>
+                <path d="M254.04597701,100.00437161 A1,1 0 0,0 253,101.00331411 "/>
+                <line x1="253" y1="101.00331411" x2="253" y2="150.12242418"/>
+            </g>
+            <g lc:layername="Main Ring" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Middle" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Segment" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+        </g>
+        <g lc:blockname="Face Cutout">
+            <g lc:layername="Back" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Base Floor" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Base Main" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Base Top" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Front" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1">
+                <path d="M253,150.12242418 A1,1 0 0,0 253.89473684,151.11686858 "/>
+                <path d="M265.02428038,154.09902079 A37,37 0 0,0 253.89473684,151.11686858 "/>
+                <path d="M265.02428038,154.09902079 A1,1 0 0,0 266.29636742,153.68517509 "/>
+                <line x1="290.85592245" y1="111.14677796" x2="266.29636742" y2="153.68517509"/>
+                <path d="M290.85592245,111.14677796 A1,1 0 0,0 290.44955104,109.75867987 "/>
+                <path d="M290.44955104,109.75867987 A88,88 0 0,0 254.04597701,100.00437161 "/>
+                <path d="M254.04597701,100.00437161 A1,1 0 0,0 253,101.00331411 "/>
+                <line x1="253" y1="101.00331411" x2="253" y2="150.12242418"/>
+            </g>
+            <g lc:layername="Main Ring" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Middle" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Segment" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+        </g>
+        <g lc:blockname="Face Cutout">
+            <g lc:layername="Back" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Base Floor" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Base Main" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Base Top" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Front" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1">
+                <path d="M253,150.12242418 A1,1 0 0,0 253.89473684,151.11686858 "/>
+                <path d="M265.02428038,154.09902079 A37,37 0 0,0 253.89473684,151.11686858 "/>
+                <path d="M265.02428038,154.09902079 A1,1 0 0,0 266.29636742,153.68517509 "/>
+                <line x1="290.85592245" y1="111.14677796" x2="266.29636742" y2="153.68517509"/>
+                <path d="M290.85592245,111.14677796 A1,1 0 0,0 290.44955104,109.75867987 "/>
+                <path d="M290.44955104,109.75867987 A88,88 0 0,0 254.04597701,100.00437161 "/>
+                <path d="M254.04597701,100.00437161 A1,1 0 0,0 253,101.00331411 "/>
+                <line x1="253" y1="101.00331411" x2="253" y2="150.12242418"/>
+            </g>
+            <g lc:layername="Main Ring" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Middle" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Segment" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+        </g>
+        <g lc:blockname="Face Cutout">
+            <g lc:layername="Back" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Base Floor" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Base Main" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Base Top" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Front" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1">
+                <path d="M253,150.12242418 A1,1 0 0,0 253.89473684,151.11686858 "/>
+                <path d="M265.02428038,154.09902079 A37,37 0 0,0 253.89473684,151.11686858 "/>
+                <path d="M265.02428038,154.09902079 A1,1 0 0,0 266.29636742,153.68517509 "/>
+                <line x1="290.85592245" y1="111.14677796" x2="266.29636742" y2="153.68517509"/>
+                <path d="M290.85592245,111.14677796 A1,1 0 0,0 290.44955104,109.75867987 "/>
+                <path d="M290.44955104,109.75867987 A88,88 0 0,0 254.04597701,100.00437161 "/>
+                <path d="M254.04597701,100.00437161 A1,1 0 0,0 253,101.00331411 "/>
+                <line x1="253" y1="101.00331411" x2="253" y2="150.12242418"/>
+            </g>
+            <g lc:layername="Main Ring" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Middle" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Segment" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+        </g>
+        <g lc:blockname="Face Cutout">
+            <g lc:layername="Back" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Base Floor" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Base Main" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Base Top" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Front" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1">
+                <path d="M253,150.12242418 A1,1 0 0,0 253.89473684,151.11686858 "/>
+                <path d="M265.02428038,154.09902079 A37,37 0 0,0 253.89473684,151.11686858 "/>
+                <path d="M265.02428038,154.09902079 A1,1 0 0,0 266.29636742,153.68517509 "/>
+                <line x1="290.85592245" y1="111.14677796" x2="266.29636742" y2="153.68517509"/>
+                <path d="M290.85592245,111.14677796 A1,1 0 0,0 290.44955104,109.75867987 "/>
+                <path d="M290.44955104,109.75867987 A88,88 0 0,0 254.04597701,100.00437161 "/>
+                <path d="M254.04597701,100.00437161 A1,1 0 0,0 253,101.00331411 "/>
+                <line x1="253" y1="101.00331411" x2="253" y2="150.12242418"/>
+            </g>
+            <g lc:layername="Main Ring" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Middle" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Segment" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+        </g>
+        <g lc:blockname="Face Cutout">
+            <g lc:layername="Back" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Base Floor" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Base Main" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Base Top" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Front" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1">
+                <path d="M253,150.12242418 A1,1 0 0,0 253.89473684,151.11686858 "/>
+                <path d="M265.02428038,154.09902079 A37,37 0 0,0 253.89473684,151.11686858 "/>
+                <path d="M265.02428038,154.09902079 A1,1 0 0,0 266.29636742,153.68517509 "/>
+                <line x1="290.85592245" y1="111.14677796" x2="266.29636742" y2="153.68517509"/>
+                <path d="M290.85592245,111.14677796 A1,1 0 0,0 290.44955104,109.75867987 "/>
+                <path d="M290.44955104,109.75867987 A88,88 0 0,0 254.04597701,100.00437161 "/>
+                <path d="M254.04597701,100.00437161 A1,1 0 0,0 253,101.00331411 "/>
+                <line x1="253" y1="101.00331411" x2="253" y2="150.12242418"/>
+            </g>
+            <g lc:layername="Main Ring" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Middle" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Segment" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+        </g>
+        <g lc:blockname="Face Cutout">
+            <g lc:layername="Back" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Base Floor" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Base Main" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Base Top" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Front" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1">
+                <path d="M253,150.12242418 A1,1 0 0,0 253.89473684,151.11686858 "/>
+                <path d="M265.02428038,154.09902079 A37,37 0 0,0 253.89473684,151.11686858 "/>
+                <path d="M265.02428038,154.09902079 A1,1 0 0,0 266.29636742,153.68517509 "/>
+                <line x1="290.85592245" y1="111.14677796" x2="266.29636742" y2="153.68517509"/>
+                <path d="M290.85592245,111.14677796 A1,1 0 0,0 290.44955104,109.75867987 "/>
+                <path d="M290.44955104,109.75867987 A88,88 0 0,0 254.04597701,100.00437161 "/>
+                <path d="M254.04597701,100.00437161 A1,1 0 0,0 253,101.00331411 "/>
+                <line x1="253" y1="101.00331411" x2="253" y2="150.12242418"/>
+            </g>
+            <g lc:layername="Main Ring" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Middle" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Segment" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+        </g>
+        <g lc:blockname="Face Cutout">
+            <g lc:layername="Back" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Base Floor" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Base Main" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Base Top" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Front" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1">
+                <path d="M253,150.12242418 A1,1 0 0,0 253.89473684,151.11686858 "/>
+                <path d="M265.02428038,154.09902079 A37,37 0 0,0 253.89473684,151.11686858 "/>
+                <path d="M265.02428038,154.09902079 A1,1 0 0,0 266.29636742,153.68517509 "/>
+                <line x1="290.85592245" y1="111.14677796" x2="266.29636742" y2="153.68517509"/>
+                <path d="M290.85592245,111.14677796 A1,1 0 0,0 290.44955104,109.75867987 "/>
+                <path d="M290.44955104,109.75867987 A88,88 0 0,0 254.04597701,100.00437161 "/>
+                <path d="M254.04597701,100.00437161 A1,1 0 0,0 253,101.00331411 "/>
+                <line x1="253" y1="101.00331411" x2="253" y2="150.12242418"/>
+            </g>
+            <g lc:layername="Main Ring" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Middle" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Segment" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+        </g>
+        <g lc:blockname="Face Cutout">
+            <g lc:layername="Back" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Base Floor" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Base Main" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Base Top" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Front" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1">
+                <path d="M253,150.12242418 A1,1 0 0,0 253.89473684,151.11686858 "/>
+                <path d="M265.02428038,154.09902079 A37,37 0 0,0 253.89473684,151.11686858 "/>
+                <path d="M265.02428038,154.09902079 A1,1 0 0,0 266.29636742,153.68517509 "/>
+                <line x1="290.85592245" y1="111.14677796" x2="266.29636742" y2="153.68517509"/>
+                <path d="M290.85592245,111.14677796 A1,1 0 0,0 290.44955104,109.75867987 "/>
+                <path d="M290.44955104,109.75867987 A88,88 0 0,0 254.04597701,100.00437161 "/>
+                <path d="M254.04597701,100.00437161 A1,1 0 0,0 253,101.00331411 "/>
+                <line x1="253" y1="101.00331411" x2="253" y2="150.12242418"/>
+            </g>
+            <g lc:layername="Main Ring" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Middle" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Segment" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+        </g>
+        <g lc:blockname="Face Cutout">
+            <g lc:layername="Back" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Base Floor" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Base Main" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Base Top" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Front" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1">
+                <path d="M253,150.12242418 A1,1 0 0,0 253.89473684,151.11686858 "/>
+                <path d="M265.02428038,154.09902079 A37,37 0 0,0 253.89473684,151.11686858 "/>
+                <path d="M265.02428038,154.09902079 A1,1 0 0,0 266.29636742,153.68517509 "/>
+                <line x1="290.85592245" y1="111.14677796" x2="266.29636742" y2="153.68517509"/>
+                <path d="M290.85592245,111.14677796 A1,1 0 0,0 290.44955104,109.75867987 "/>
+                <path d="M290.44955104,109.75867987 A88,88 0 0,0 254.04597701,100.00437161 "/>
+                <path d="M254.04597701,100.00437161 A1,1 0 0,0 253,101.00331411 "/>
+                <line x1="253" y1="101.00331411" x2="253" y2="150.12242418"/>
+            </g>
+            <g lc:layername="Main Ring" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Middle" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Segment" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+        </g>
+        <g lc:blockname="Face Cutout">
+            <g lc:layername="Back" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Base Floor" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Base Main" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Base Top" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Front" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1">
+                <path d="M253,150.12242418 A1,1 0 0,0 253.89473684,151.11686858 "/>
+                <path d="M265.02428038,154.09902079 A37,37 0 0,0 253.89473684,151.11686858 "/>
+                <path d="M265.02428038,154.09902079 A1,1 0 0,0 266.29636742,153.68517509 "/>
+                <line x1="290.85592245" y1="111.14677796" x2="266.29636742" y2="153.68517509"/>
+                <path d="M290.85592245,111.14677796 A1,1 0 0,0 290.44955104,109.75867987 "/>
+                <path d="M290.44955104,109.75867987 A88,88 0 0,0 254.04597701,100.00437161 "/>
+                <path d="M254.04597701,100.00437161 A1,1 0 0,0 253,101.00331411 "/>
+                <line x1="253" y1="101.00331411" x2="253" y2="150.12242418"/>
+            </g>
+            <g lc:layername="Main Ring" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Middle" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Segment" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+        </g>
+        <g lc:blockname="Face Cutout">
+            <g lc:layername="Back" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Base Floor" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Base Main" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Base Top" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Front" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1">
+                <path d="M253,150.12242418 A1,1 0 0,0 253.89473684,151.11686858 "/>
+                <path d="M265.02428038,154.09902079 A37,37 0 0,0 253.89473684,151.11686858 "/>
+                <path d="M265.02428038,154.09902079 A1,1 0 0,0 266.29636742,153.68517509 "/>
+                <line x1="290.85592245" y1="111.14677796" x2="266.29636742" y2="153.68517509"/>
+                <path d="M290.85592245,111.14677796 A1,1 0 0,0 290.44955104,109.75867987 "/>
+                <path d="M290.44955104,109.75867987 A88,88 0 0,0 254.04597701,100.00437161 "/>
+                <path d="M254.04597701,100.00437161 A1,1 0 0,0 253,101.00331411 "/>
+                <line x1="253" y1="101.00331411" x2="253" y2="150.12242418"/>
+            </g>
+            <g lc:layername="Main Ring" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Middle" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Segment" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+        </g>
+        <g lc:blockname="Face Cutout">
+            <g lc:layername="Back" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Base Floor" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Base Main" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Base Top" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Front" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1">
+                <path d="M253,150.12242418 A1,1 0 0,0 253.89473684,151.11686858 "/>
+                <path d="M265.02428038,154.09902079 A37,37 0 0,0 253.89473684,151.11686858 "/>
+                <path d="M265.02428038,154.09902079 A1,1 0 0,0 266.29636742,153.68517509 "/>
+                <line x1="290.85592245" y1="111.14677796" x2="266.29636742" y2="153.68517509"/>
+                <path d="M290.85592245,111.14677796 A1,1 0 0,0 290.44955104,109.75867987 "/>
+                <path d="M290.44955104,109.75867987 A88,88 0 0,0 254.04597701,100.00437161 "/>
+                <path d="M254.04597701,100.00437161 A1,1 0 0,0 253,101.00331411 "/>
+                <line x1="253" y1="101.00331411" x2="253" y2="150.12242418"/>
+            </g>
+            <g lc:layername="Main Ring" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Middle" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Segment" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+        </g>
+        <path d="M74.11809549,516.86077985 A1,1 0 0,0 73.38425296,515.89685029 "/>
+        <line x1="74.11809549" y1="516.86077985" x2="74.11809549" y2="525.0964767"/>
+        <path d="M74.11809549,525.0964767 A1,1 0 0,0 75.11809549,526.0964767 "/>
+        <line x1="75.11809549" y1="526.0964767" x2="124.88190451" y2="526.0964767"/>
+        <path d="M124.88190451,526.0964767 A1,1 0 0,0 125.88190451,525.0964767 "/>
+        <line x1="125.88190451" y1="516.86077985" x2="125.88190451" y2="525.0964767"/>
+        <path d="M126.61574704,515.89685029 A1,1 0 0,0 125.88190451,516.86077985 "/>
+        <path d="M126.61574704,515.89685029 A100,100 0 1,0 73.38425296,515.89685029 "/>
+    </g>
+    <g lc:layername="Main Ring" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1">
+        <path d="M488.93436411,197.35688579 A1,1 0 0,0 488.20052158,196.39295622 "/>
+        <line x1="488.93436411" y1="197.35688579" x2="488.93436411" y2="205.59258263"/>
+        <path d="M488.93436411,205.59258263 A1,1 0 0,0 489.93436411,206.59258263 "/>
+        <line x1="489.93436411" y1="206.59258263" x2="539.69817313" y2="206.59258263"/>
+        <path d="M539.69817313,206.59258263 A1,1 0 0,0 540.69817313,205.59258263 "/>
+        <line x1="540.69817313" y1="197.35688579" x2="540.69817313" y2="205.59258263"/>
+        <path d="M541.43201566,196.39295622 A1,1 0 0,0 540.69817313,197.35688579 "/>
+        <path d="M541.43201566,196.39295622 A100,100 0 1,0 488.20052158,196.39295622 "/>
+        <path d="M484.53464884,190.04456399 A1,1 0 0,0 485.7492455,189.54109764 "/>
+        <path d="M495.21850023,192.0783768 A5,5 0 0,0 485.7492455,189.54109764 "/>
+        <path d="M495.21850023,192.0783768 A1,1 0 0,0 496.01863862,193.12168977 "/>
+        <path d="M543.88329174,189.54109764 A1,1 0 0,0 545.09788839,190.04456399 "/>
+        <path d="M545.09788839,190.04456399 A95,95 0 0,0 577.65633862,171.24693399 "/>
+        <path d="M577.65633862,171.24693399 A1,1 0 0,0 577.8276223,169.94332925 "/>
+        <path d="M584.75959787,163.01135368 A5,5 0 0,0 577.8276223,169.94332925 "/>
+        <path d="M584.75959787,163.01135368 A1,1 0 0,0 586.06320261,162.84007 "/>
+        <path d="M586.06320261,162.84007 A95,95 0 0,0 604.86083261,130.28161978 "/>
+        <path d="M604.86083261,130.28161978 A1,1 0 0,0 604.35736626,129.06702312 "/>
+        <path d="M606.89464542,119.59776839 A5,5 0 0,0 604.35736626,129.06702312 "/>
+        <path d="M606.89464542,119.59776839 A1,1 0 0,0 607.93795839,118.79763 "/>
+        <path d="M607.93795839,118.79763 A95,95 0 0,0 607.93795839,81.20237 "/>
+        <path d="M607.93795839,81.20237 A1,1 0 0,0 606.89464542,80.40223161 "/>
+        <path d="M604.35736626,70.93297688 A5,5 0 0,0 606.89464542,80.40223161 "/>
+        <path d="M604.35736626,70.93297688 A1,1 0 0,0 604.86083261,69.71838022 "/>
+        <path d="M604.86083261,69.71838022 A95,95 0 0,0 586.06320261,37.15993 "/>
+        <path d="M586.06320261,37.15993 A1,1 0 0,0 584.75959787,36.98864632 "/>
+        <path d="M577.8276223,30.05667075 A5,5 0 0,0 584.75959787,36.98864632 "/>
+        <path d="M577.8276223,30.05667075 A1,1 0 0,0 577.65633862,28.75306601 "/>
+        <path d="M577.65633862,28.75306601 A95,95 0 0,0 545.09788839,9.95543601 "/>
+        <path d="M545.09788839,9.95543601 A1,1 0 0,0 543.88329174,10.45890236 "/>
+        <path d="M534.41403701,7.9216232 A5,5 0 0,0 543.88329174,10.45890236 "/>
+        <path d="M534.41403701,7.9216232 A1,1 0 0,0 533.61389862,6.87831023 "/>
+        <path d="M533.61389862,6.87831023 A95,95 0 0,0 496.01863862,6.87831023 "/>
+        <path d="M496.01863862,6.87831023 A1,1 0 0,0 495.21850023,7.9216232 "/>
+        <path d="M485.7492455,10.45890236 A5,5 0 0,0 495.21850023,7.9216232 "/>
+        <path d="M485.7492455,10.45890236 A1,1 0 0,0 484.53464884,9.95543601 "/>
+        <path d="M484.53464884,9.95543601 A95,95 0 0,0 451.97619862,28.75306601 "/>
+        <path d="M451.97619862,28.75306601 A1,1 0 0,0 451.80491494,30.05667075 "/>
+        <path d="M444.87293936,36.98864632 A5,5 0 0,0 451.80491494,30.05667075 "/>
+        <path d="M444.87293936,36.98864632 A1,1 0 0,0 443.56933463,37.15993 "/>
+        <path d="M443.56933463,37.15993 A95,95 0 0,0 424.77170463,69.71838022 "/>
+        <path d="M424.77170463,69.71838022 A1,1 0 0,0 425.27517098,70.93297688 "/>
+        <path d="M422.73789182,80.40223161 A5,5 0 0,0 425.27517098,70.93297688 "/>
+        <path d="M422.73789182,80.40223161 A1,1 0 0,0 421.69457884,81.20237 "/>
+        <path d="M421.69457884,81.20237 A95,95 0 0,0 421.69457884,118.79763 "/>
+        <path d="M421.69457884,118.79763 A1,1 0 0,0 422.73789182,119.59776839 "/>
+        <path d="M425.27517098,129.06702312 A5,5 0 0,0 422.73789182,119.59776839 "/>
+        <path d="M425.27517098,129.06702312 A1,1 0 0,0 424.77170463,130.28161978 "/>
+        <path d="M424.77170463,130.28161978 A95,95 0 0,0 443.56933463,162.84007 "/>
+        <path d="M443.56933463,162.84007 A1,1 0 0,0 444.87293936,163.01135368 "/>
+        <path d="M451.80491494,169.94332925 A5,5 0 0,0 444.87293936,163.01135368 "/>
+        <path d="M451.97619862,171.24693399 A95,95 0 0,0 484.53464884,190.04456399 "/>
+        <path d="M451.80491494,169.94332925 A1,1 0 0,0 451.97619862,171.24693399 "/>
+        <path d="M496.01867461,193.12169704 A95,95 0 0,0 539.4040779,191.7629535 "/>
+        <path d="M539.4040779,191.7629535 A1,1 0 0,0 540.11118468,190.53820863 "/>
+        <line x1="539.47342826" y1="188.15806924" x2="540.11118468" y2="190.53820863"/>
+        <path d="M543.88329174,189.54109764 A5,5 0 0,0 540.69817313,186.93332437 "/>
+        <path d="M540.69817313,186.93332437 A1,1 0 0,0 539.47342826,188.15806924 "/>
+    </g>
+    <g lc:layername="Middle" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1">
+        <path d="M103.44909164,224.09980263 A1,1 0 0,0 104.35343084,223.11909846 "/>
+        <path d="M105.01323688,222.1003791 A1,1 0 0,0 104.35480798,223.02555418 "/>
+        <path d="M110.49979507,220.61273603 A34,34 0 0,0 105.01323688,222.1003791 "/>
+        <path d="M111.53694627,221.08116529 A1,1 0 0,0 110.49979507,220.61273603 "/>
+        <path d="M112.86919729,221.57615499 A29.5,29.5 0 1,0 103.44909164,224.09980263 "/>
+        <path d="M111.59726141,221.18149823 A1,1 0 0,0 112.86919729,221.57615499 "/>
+    </g>
+    <g lc:layername="Segment" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1">
+        <line x1="104.35343084" y1="223.11909846" x2="104.35480798" y2="223.02555418"/>
+        <line x1="111.53694627" y1="221.08116529" x2="111.59726141" y2="221.18149823"/>
+        <g lc:blockname="Smooth Segment">
+            <g lc:layername="Back" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Base Floor" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Base Main" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Base Top" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Front" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Main Ring" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Middle" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Segment" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1">
+                <path d="M228.74462178,48.68434542 A1,1 0 0,0 229.18653867,49.79487723 "/>
+                <path d="M232.04220266,54.96336185 A6,6 0 0,0 229.18653867,49.79487723 "/>
+                <path d="M232.04220266,54.96336185 A1,1 0 0,0 232.85404717,55.95521145 "/>
+                <path d="M232.85404717,55.95521145 A94.5,94.5 0 0,0 268.40654144,55.95521145 "/>
+                <path d="M268.40654144,55.95521145 A1,1 0 0,0 269.21838594,54.96336185 "/>
+                <path d="M272.07404994,49.79487723 A6,6 0 0,0 269.21838594,54.96336185 "/>
+                <path d="M272.07404994,49.79487723 A1,1 0 0,0 272.51596683,48.68434542 "/>
+                <line x1="272.51596683" y1="48.68434542" x2="258.31934081" y2="-4.29818416"/>
+                <path d="M258.31934081,-4.29818416 A1,1 0 0,0 257.15272482,-5.01901988 "/>
+                <path d="M255.36686623,-4.70480782 A1,1 0 0,0 254.52146397,-3.8482844 "/>
+                <line x1="254.52205913" y1="-3.85272636" x2="254.52146397" y2="-3.8482844"/>
+                <path d="M253.61881383,-2.98939626 A1,1 0 0,0 254.52205913,-3.85272636 "/>
+                <path d="M247.65789841,-2.98797739 A34,34 0 0,0 253.61881383,-2.98939626 "/>
+                <path d="M246.74692786,-3.92749605 A1,1 0 0,0 247.65789841,-2.98797739 "/>
+                <path d="M246.74692786,-3.92749605 A1,1 0 0,0 245.89493009,-4.86006951 "/>
+                <path d="M244.14746438,-5.167875 A32.34622715,32.34622715 0 0,0 245.89493009,-4.86006951 "/>
+                <line x1="228.74462178" y1="48.68434542" x2="242.98111858" y2="-4.44698397"/>
+                <path d="M244.14746438,-5.167875 A1,1 0 0,0 242.98111858,-4.44698397 "/>
+                <line x1="255.36686623" y1="-4.70480782" x2="257.15272482" y2="-5.01901988"/>
+            </g>
+        </g>
+        <g lc:blockname="Smooth Segment">
+            <g lc:layername="Back" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Base Floor" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Base Main" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Base Top" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Front" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Main Ring" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Middle" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Segment" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1">
+                <path d="M228.74462178,48.68434542 A1,1 0 0,0 229.18653867,49.79487723 "/>
+                <path d="M232.04220266,54.96336185 A6,6 0 0,0 229.18653867,49.79487723 "/>
+                <path d="M232.04220266,54.96336185 A1,1 0 0,0 232.85404717,55.95521145 "/>
+                <path d="M232.85404717,55.95521145 A94.5,94.5 0 0,0 268.40654144,55.95521145 "/>
+                <path d="M268.40654144,55.95521145 A1,1 0 0,0 269.21838594,54.96336185 "/>
+                <path d="M272.07404994,49.79487723 A6,6 0 0,0 269.21838594,54.96336185 "/>
+                <path d="M272.07404994,49.79487723 A1,1 0 0,0 272.51596683,48.68434542 "/>
+                <line x1="272.51596683" y1="48.68434542" x2="258.31934081" y2="-4.29818416"/>
+                <path d="M258.31934081,-4.29818416 A1,1 0 0,0 257.15272482,-5.01901988 "/>
+                <path d="M255.36686623,-4.70480782 A1,1 0 0,0 254.52146397,-3.8482844 "/>
+                <line x1="254.52205913" y1="-3.85272636" x2="254.52146397" y2="-3.8482844"/>
+                <path d="M253.61881383,-2.98939626 A1,1 0 0,0 254.52205913,-3.85272636 "/>
+                <path d="M247.65789841,-2.98797739 A34,34 0 0,0 253.61881383,-2.98939626 "/>
+                <path d="M246.74692786,-3.92749605 A1,1 0 0,0 247.65789841,-2.98797739 "/>
+                <path d="M246.74692786,-3.92749605 A1,1 0 0,0 245.89493009,-4.86006951 "/>
+                <path d="M244.14746438,-5.167875 A32.34622715,32.34622715 0 0,0 245.89493009,-4.86006951 "/>
+                <line x1="228.74462178" y1="48.68434542" x2="242.98111858" y2="-4.44698397"/>
+                <path d="M244.14746438,-5.167875 A1,1 0 0,0 242.98111858,-4.44698397 "/>
+                <line x1="255.36686623" y1="-4.70480782" x2="257.15272482" y2="-5.01901988"/>
+            </g>
+        </g>
+        <g lc:blockname="Smooth Segment">
+            <g lc:layername="Back" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Base Floor" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Base Main" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Base Top" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Front" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Main Ring" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Middle" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Segment" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1">
+                <path d="M228.74462178,48.68434542 A1,1 0 0,0 229.18653867,49.79487723 "/>
+                <path d="M232.04220266,54.96336185 A6,6 0 0,0 229.18653867,49.79487723 "/>
+                <path d="M232.04220266,54.96336185 A1,1 0 0,0 232.85404717,55.95521145 "/>
+                <path d="M232.85404717,55.95521145 A94.5,94.5 0 0,0 268.40654144,55.95521145 "/>
+                <path d="M268.40654144,55.95521145 A1,1 0 0,0 269.21838594,54.96336185 "/>
+                <path d="M272.07404994,49.79487723 A6,6 0 0,0 269.21838594,54.96336185 "/>
+                <path d="M272.07404994,49.79487723 A1,1 0 0,0 272.51596683,48.68434542 "/>
+                <line x1="272.51596683" y1="48.68434542" x2="258.31934081" y2="-4.29818416"/>
+                <path d="M258.31934081,-4.29818416 A1,1 0 0,0 257.15272482,-5.01901988 "/>
+                <path d="M255.36686623,-4.70480782 A1,1 0 0,0 254.52146397,-3.8482844 "/>
+                <line x1="254.52205913" y1="-3.85272636" x2="254.52146397" y2="-3.8482844"/>
+                <path d="M253.61881383,-2.98939626 A1,1 0 0,0 254.52205913,-3.85272636 "/>
+                <path d="M247.65789841,-2.98797739 A34,34 0 0,0 253.61881383,-2.98939626 "/>
+                <path d="M246.74692786,-3.92749605 A1,1 0 0,0 247.65789841,-2.98797739 "/>
+                <path d="M246.74692786,-3.92749605 A1,1 0 0,0 245.89493009,-4.86006951 "/>
+                <path d="M244.14746438,-5.167875 A32.34622715,32.34622715 0 0,0 245.89493009,-4.86006951 "/>
+                <line x1="228.74462178" y1="48.68434542" x2="242.98111858" y2="-4.44698397"/>
+                <path d="M244.14746438,-5.167875 A1,1 0 0,0 242.98111858,-4.44698397 "/>
+                <line x1="255.36686623" y1="-4.70480782" x2="257.15272482" y2="-5.01901988"/>
+            </g>
+        </g>
+        <g lc:blockname="Smooth Segment">
+            <g lc:layername="Back" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Base Floor" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Base Main" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Base Top" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Front" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Main Ring" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Middle" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Segment" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1">
+                <path d="M228.74462178,48.68434542 A1,1 0 0,0 229.18653867,49.79487723 "/>
+                <path d="M232.04220266,54.96336185 A6,6 0 0,0 229.18653867,49.79487723 "/>
+                <path d="M232.04220266,54.96336185 A1,1 0 0,0 232.85404717,55.95521145 "/>
+                <path d="M232.85404717,55.95521145 A94.5,94.5 0 0,0 268.40654144,55.95521145 "/>
+                <path d="M268.40654144,55.95521145 A1,1 0 0,0 269.21838594,54.96336185 "/>
+                <path d="M272.07404994,49.79487723 A6,6 0 0,0 269.21838594,54.96336185 "/>
+                <path d="M272.07404994,49.79487723 A1,1 0 0,0 272.51596683,48.68434542 "/>
+                <line x1="272.51596683" y1="48.68434542" x2="258.31934081" y2="-4.29818416"/>
+                <path d="M258.31934081,-4.29818416 A1,1 0 0,0 257.15272482,-5.01901988 "/>
+                <path d="M255.36686623,-4.70480782 A1,1 0 0,0 254.52146397,-3.8482844 "/>
+                <line x1="254.52205913" y1="-3.85272636" x2="254.52146397" y2="-3.8482844"/>
+                <path d="M253.61881383,-2.98939626 A1,1 0 0,0 254.52205913,-3.85272636 "/>
+                <path d="M247.65789841,-2.98797739 A34,34 0 0,0 253.61881383,-2.98939626 "/>
+                <path d="M246.74692786,-3.92749605 A1,1 0 0,0 247.65789841,-2.98797739 "/>
+                <path d="M246.74692786,-3.92749605 A1,1 0 0,0 245.89493009,-4.86006951 "/>
+                <path d="M244.14746438,-5.167875 A32.34622715,32.34622715 0 0,0 245.89493009,-4.86006951 "/>
+                <line x1="228.74462178" y1="48.68434542" x2="242.98111858" y2="-4.44698397"/>
+                <path d="M244.14746438,-5.167875 A1,1 0 0,0 242.98111858,-4.44698397 "/>
+                <line x1="255.36686623" y1="-4.70480782" x2="257.15272482" y2="-5.01901988"/>
+            </g>
+        </g>
+        <g lc:blockname="Smooth Segment">
+            <g lc:layername="Back" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Base Floor" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Base Main" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Base Top" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Front" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Main Ring" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Middle" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Segment" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1">
+                <path d="M228.74462178,48.68434542 A1,1 0 0,0 229.18653867,49.79487723 "/>
+                <path d="M232.04220266,54.96336185 A6,6 0 0,0 229.18653867,49.79487723 "/>
+                <path d="M232.04220266,54.96336185 A1,1 0 0,0 232.85404717,55.95521145 "/>
+                <path d="M232.85404717,55.95521145 A94.5,94.5 0 0,0 268.40654144,55.95521145 "/>
+                <path d="M268.40654144,55.95521145 A1,1 0 0,0 269.21838594,54.96336185 "/>
+                <path d="M272.07404994,49.79487723 A6,6 0 0,0 269.21838594,54.96336185 "/>
+                <path d="M272.07404994,49.79487723 A1,1 0 0,0 272.51596683,48.68434542 "/>
+                <line x1="272.51596683" y1="48.68434542" x2="258.31934081" y2="-4.29818416"/>
+                <path d="M258.31934081,-4.29818416 A1,1 0 0,0 257.15272482,-5.01901988 "/>
+                <path d="M255.36686623,-4.70480782 A1,1 0 0,0 254.52146397,-3.8482844 "/>
+                <line x1="254.52205913" y1="-3.85272636" x2="254.52146397" y2="-3.8482844"/>
+                <path d="M253.61881383,-2.98939626 A1,1 0 0,0 254.52205913,-3.85272636 "/>
+                <path d="M247.65789841,-2.98797739 A34,34 0 0,0 253.61881383,-2.98939626 "/>
+                <path d="M246.74692786,-3.92749605 A1,1 0 0,0 247.65789841,-2.98797739 "/>
+                <path d="M246.74692786,-3.92749605 A1,1 0 0,0 245.89493009,-4.86006951 "/>
+                <path d="M244.14746438,-5.167875 A32.34622715,32.34622715 0 0,0 245.89493009,-4.86006951 "/>
+                <line x1="228.74462178" y1="48.68434542" x2="242.98111858" y2="-4.44698397"/>
+                <path d="M244.14746438,-5.167875 A1,1 0 0,0 242.98111858,-4.44698397 "/>
+                <line x1="255.36686623" y1="-4.70480782" x2="257.15272482" y2="-5.01901988"/>
+            </g>
+        </g>
+        <g lc:blockname="Smooth Segment">
+            <g lc:layername="Back" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Base Floor" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Base Main" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Base Top" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Front" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Main Ring" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Middle" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Segment" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1">
+                <path d="M228.74462178,48.68434542 A1,1 0 0,0 229.18653867,49.79487723 "/>
+                <path d="M232.04220266,54.96336185 A6,6 0 0,0 229.18653867,49.79487723 "/>
+                <path d="M232.04220266,54.96336185 A1,1 0 0,0 232.85404717,55.95521145 "/>
+                <path d="M232.85404717,55.95521145 A94.5,94.5 0 0,0 268.40654144,55.95521145 "/>
+                <path d="M268.40654144,55.95521145 A1,1 0 0,0 269.21838594,54.96336185 "/>
+                <path d="M272.07404994,49.79487723 A6,6 0 0,0 269.21838594,54.96336185 "/>
+                <path d="M272.07404994,49.79487723 A1,1 0 0,0 272.51596683,48.68434542 "/>
+                <line x1="272.51596683" y1="48.68434542" x2="258.31934081" y2="-4.29818416"/>
+                <path d="M258.31934081,-4.29818416 A1,1 0 0,0 257.15272482,-5.01901988 "/>
+                <path d="M255.36686623,-4.70480782 A1,1 0 0,0 254.52146397,-3.8482844 "/>
+                <line x1="254.52205913" y1="-3.85272636" x2="254.52146397" y2="-3.8482844"/>
+                <path d="M253.61881383,-2.98939626 A1,1 0 0,0 254.52205913,-3.85272636 "/>
+                <path d="M247.65789841,-2.98797739 A34,34 0 0,0 253.61881383,-2.98939626 "/>
+                <path d="M246.74692786,-3.92749605 A1,1 0 0,0 247.65789841,-2.98797739 "/>
+                <path d="M246.74692786,-3.92749605 A1,1 0 0,0 245.89493009,-4.86006951 "/>
+                <path d="M244.14746438,-5.167875 A32.34622715,32.34622715 0 0,0 245.89493009,-4.86006951 "/>
+                <line x1="228.74462178" y1="48.68434542" x2="242.98111858" y2="-4.44698397"/>
+                <path d="M244.14746438,-5.167875 A1,1 0 0,0 242.98111858,-4.44698397 "/>
+                <line x1="255.36686623" y1="-4.70480782" x2="257.15272482" y2="-5.01901988"/>
+            </g>
+        </g>
+        <g lc:blockname="Smooth Segment">
+            <g lc:layername="Back" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Base Floor" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Base Main" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Base Top" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Front" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Main Ring" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Middle" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Segment" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1">
+                <path d="M228.74462178,48.68434542 A1,1 0 0,0 229.18653867,49.79487723 "/>
+                <path d="M232.04220266,54.96336185 A6,6 0 0,0 229.18653867,49.79487723 "/>
+                <path d="M232.04220266,54.96336185 A1,1 0 0,0 232.85404717,55.95521145 "/>
+                <path d="M232.85404717,55.95521145 A94.5,94.5 0 0,0 268.40654144,55.95521145 "/>
+                <path d="M268.40654144,55.95521145 A1,1 0 0,0 269.21838594,54.96336185 "/>
+                <path d="M272.07404994,49.79487723 A6,6 0 0,0 269.21838594,54.96336185 "/>
+                <path d="M272.07404994,49.79487723 A1,1 0 0,0 272.51596683,48.68434542 "/>
+                <line x1="272.51596683" y1="48.68434542" x2="258.31934081" y2="-4.29818416"/>
+                <path d="M258.31934081,-4.29818416 A1,1 0 0,0 257.15272482,-5.01901988 "/>
+                <path d="M255.36686623,-4.70480782 A1,1 0 0,0 254.52146397,-3.8482844 "/>
+                <line x1="254.52205913" y1="-3.85272636" x2="254.52146397" y2="-3.8482844"/>
+                <path d="M253.61881383,-2.98939626 A1,1 0 0,0 254.52205913,-3.85272636 "/>
+                <path d="M247.65789841,-2.98797739 A34,34 0 0,0 253.61881383,-2.98939626 "/>
+                <path d="M246.74692786,-3.92749605 A1,1 0 0,0 247.65789841,-2.98797739 "/>
+                <path d="M246.74692786,-3.92749605 A1,1 0 0,0 245.89493009,-4.86006951 "/>
+                <path d="M244.14746438,-5.167875 A32.34622715,32.34622715 0 0,0 245.89493009,-4.86006951 "/>
+                <line x1="228.74462178" y1="48.68434542" x2="242.98111858" y2="-4.44698397"/>
+                <path d="M244.14746438,-5.167875 A1,1 0 0,0 242.98111858,-4.44698397 "/>
+                <line x1="255.36686623" y1="-4.70480782" x2="257.15272482" y2="-5.01901988"/>
+            </g>
+        </g>
+        <g lc:blockname="Smooth Segment">
+            <g lc:layername="Back" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Base Floor" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Base Main" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Base Top" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Front" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Main Ring" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Middle" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Segment" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1">
+                <path d="M228.74462178,48.68434542 A1,1 0 0,0 229.18653867,49.79487723 "/>
+                <path d="M232.04220266,54.96336185 A6,6 0 0,0 229.18653867,49.79487723 "/>
+                <path d="M232.04220266,54.96336185 A1,1 0 0,0 232.85404717,55.95521145 "/>
+                <path d="M232.85404717,55.95521145 A94.5,94.5 0 0,0 268.40654144,55.95521145 "/>
+                <path d="M268.40654144,55.95521145 A1,1 0 0,0 269.21838594,54.96336185 "/>
+                <path d="M272.07404994,49.79487723 A6,6 0 0,0 269.21838594,54.96336185 "/>
+                <path d="M272.07404994,49.79487723 A1,1 0 0,0 272.51596683,48.68434542 "/>
+                <line x1="272.51596683" y1="48.68434542" x2="258.31934081" y2="-4.29818416"/>
+                <path d="M258.31934081,-4.29818416 A1,1 0 0,0 257.15272482,-5.01901988 "/>
+                <path d="M255.36686623,-4.70480782 A1,1 0 0,0 254.52146397,-3.8482844 "/>
+                <line x1="254.52205913" y1="-3.85272636" x2="254.52146397" y2="-3.8482844"/>
+                <path d="M253.61881383,-2.98939626 A1,1 0 0,0 254.52205913,-3.85272636 "/>
+                <path d="M247.65789841,-2.98797739 A34,34 0 0,0 253.61881383,-2.98939626 "/>
+                <path d="M246.74692786,-3.92749605 A1,1 0 0,0 247.65789841,-2.98797739 "/>
+                <path d="M246.74692786,-3.92749605 A1,1 0 0,0 245.89493009,-4.86006951 "/>
+                <path d="M244.14746438,-5.167875 A32.34622715,32.34622715 0 0,0 245.89493009,-4.86006951 "/>
+                <line x1="228.74462178" y1="48.68434542" x2="242.98111858" y2="-4.44698397"/>
+                <path d="M244.14746438,-5.167875 A1,1 0 0,0 242.98111858,-4.44698397 "/>
+                <line x1="255.36686623" y1="-4.70480782" x2="257.15272482" y2="-5.01901988"/>
+            </g>
+        </g>
+        <g lc:blockname="Smooth Segment">
+            <g lc:layername="Back" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Base Floor" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Base Main" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Base Top" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Front" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Main Ring" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Middle" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Segment" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1">
+                <path d="M228.74462178,48.68434542 A1,1 0 0,0 229.18653867,49.79487723 "/>
+                <path d="M232.04220266,54.96336185 A6,6 0 0,0 229.18653867,49.79487723 "/>
+                <path d="M232.04220266,54.96336185 A1,1 0 0,0 232.85404717,55.95521145 "/>
+                <path d="M232.85404717,55.95521145 A94.5,94.5 0 0,0 268.40654144,55.95521145 "/>
+                <path d="M268.40654144,55.95521145 A1,1 0 0,0 269.21838594,54.96336185 "/>
+                <path d="M272.07404994,49.79487723 A6,6 0 0,0 269.21838594,54.96336185 "/>
+                <path d="M272.07404994,49.79487723 A1,1 0 0,0 272.51596683,48.68434542 "/>
+                <line x1="272.51596683" y1="48.68434542" x2="258.31934081" y2="-4.29818416"/>
+                <path d="M258.31934081,-4.29818416 A1,1 0 0,0 257.15272482,-5.01901988 "/>
+                <path d="M255.36686623,-4.70480782 A1,1 0 0,0 254.52146397,-3.8482844 "/>
+                <line x1="254.52205913" y1="-3.85272636" x2="254.52146397" y2="-3.8482844"/>
+                <path d="M253.61881383,-2.98939626 A1,1 0 0,0 254.52205913,-3.85272636 "/>
+                <path d="M247.65789841,-2.98797739 A34,34 0 0,0 253.61881383,-2.98939626 "/>
+                <path d="M246.74692786,-3.92749605 A1,1 0 0,0 247.65789841,-2.98797739 "/>
+                <path d="M246.74692786,-3.92749605 A1,1 0 0,0 245.89493009,-4.86006951 "/>
+                <path d="M244.14746438,-5.167875 A32.34622715,32.34622715 0 0,0 245.89493009,-4.86006951 "/>
+                <line x1="228.74462178" y1="48.68434542" x2="242.98111858" y2="-4.44698397"/>
+                <path d="M244.14746438,-5.167875 A1,1 0 0,0 242.98111858,-4.44698397 "/>
+                <line x1="255.36686623" y1="-4.70480782" x2="257.15272482" y2="-5.01901988"/>
+            </g>
+        </g>
+        <g lc:blockname="Smooth Segment">
+            <g lc:layername="Back" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Base Floor" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Base Main" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Base Top" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Front" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Main Ring" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Middle" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Segment" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1">
+                <path d="M228.74462178,48.68434542 A1,1 0 0,0 229.18653867,49.79487723 "/>
+                <path d="M232.04220266,54.96336185 A6,6 0 0,0 229.18653867,49.79487723 "/>
+                <path d="M232.04220266,54.96336185 A1,1 0 0,0 232.85404717,55.95521145 "/>
+                <path d="M232.85404717,55.95521145 A94.5,94.5 0 0,0 268.40654144,55.95521145 "/>
+                <path d="M268.40654144,55.95521145 A1,1 0 0,0 269.21838594,54.96336185 "/>
+                <path d="M272.07404994,49.79487723 A6,6 0 0,0 269.21838594,54.96336185 "/>
+                <path d="M272.07404994,49.79487723 A1,1 0 0,0 272.51596683,48.68434542 "/>
+                <line x1="272.51596683" y1="48.68434542" x2="258.31934081" y2="-4.29818416"/>
+                <path d="M258.31934081,-4.29818416 A1,1 0 0,0 257.15272482,-5.01901988 "/>
+                <path d="M255.36686623,-4.70480782 A1,1 0 0,0 254.52146397,-3.8482844 "/>
+                <line x1="254.52205913" y1="-3.85272636" x2="254.52146397" y2="-3.8482844"/>
+                <path d="M253.61881383,-2.98939626 A1,1 0 0,0 254.52205913,-3.85272636 "/>
+                <path d="M247.65789841,-2.98797739 A34,34 0 0,0 253.61881383,-2.98939626 "/>
+                <path d="M246.74692786,-3.92749605 A1,1 0 0,0 247.65789841,-2.98797739 "/>
+                <path d="M246.74692786,-3.92749605 A1,1 0 0,0 245.89493009,-4.86006951 "/>
+                <path d="M244.14746438,-5.167875 A32.34622715,32.34622715 0 0,0 245.89493009,-4.86006951 "/>
+                <line x1="228.74462178" y1="48.68434542" x2="242.98111858" y2="-4.44698397"/>
+                <path d="M244.14746438,-5.167875 A1,1 0 0,0 242.98111858,-4.44698397 "/>
+                <line x1="255.36686623" y1="-4.70480782" x2="257.15272482" y2="-5.01901988"/>
+            </g>
+        </g>
+        <g lc:blockname="Smooth Segment">
+            <g lc:layername="Back" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Base Floor" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Base Main" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Base Top" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Front" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Main Ring" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Middle" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Segment" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1">
+                <path d="M228.74462178,48.68434542 A1,1 0 0,0 229.18653867,49.79487723 "/>
+                <path d="M232.04220266,54.96336185 A6,6 0 0,0 229.18653867,49.79487723 "/>
+                <path d="M232.04220266,54.96336185 A1,1 0 0,0 232.85404717,55.95521145 "/>
+                <path d="M232.85404717,55.95521145 A94.5,94.5 0 0,0 268.40654144,55.95521145 "/>
+                <path d="M268.40654144,55.95521145 A1,1 0 0,0 269.21838594,54.96336185 "/>
+                <path d="M272.07404994,49.79487723 A6,6 0 0,0 269.21838594,54.96336185 "/>
+                <path d="M272.07404994,49.79487723 A1,1 0 0,0 272.51596683,48.68434542 "/>
+                <line x1="272.51596683" y1="48.68434542" x2="258.31934081" y2="-4.29818416"/>
+                <path d="M258.31934081,-4.29818416 A1,1 0 0,0 257.15272482,-5.01901988 "/>
+                <path d="M255.36686623,-4.70480782 A1,1 0 0,0 254.52146397,-3.8482844 "/>
+                <line x1="254.52205913" y1="-3.85272636" x2="254.52146397" y2="-3.8482844"/>
+                <path d="M253.61881383,-2.98939626 A1,1 0 0,0 254.52205913,-3.85272636 "/>
+                <path d="M247.65789841,-2.98797739 A34,34 0 0,0 253.61881383,-2.98939626 "/>
+                <path d="M246.74692786,-3.92749605 A1,1 0 0,0 247.65789841,-2.98797739 "/>
+                <path d="M246.74692786,-3.92749605 A1,1 0 0,0 245.89493009,-4.86006951 "/>
+                <path d="M244.14746438,-5.167875 A32.34622715,32.34622715 0 0,0 245.89493009,-4.86006951 "/>
+                <line x1="228.74462178" y1="48.68434542" x2="242.98111858" y2="-4.44698397"/>
+                <path d="M244.14746438,-5.167875 A1,1 0 0,0 242.98111858,-4.44698397 "/>
+                <line x1="255.36686623" y1="-4.70480782" x2="257.15272482" y2="-5.01901988"/>
+            </g>
+        </g>
+        <g lc:blockname="Smooth Segment">
+            <g lc:layername="Back" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Base Floor" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Base Main" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Base Top" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Front" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Main Ring" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Middle" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Segment" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1">
+                <path d="M228.74462178,48.68434542 A1,1 0 0,0 229.18653867,49.79487723 "/>
+                <path d="M232.04220266,54.96336185 A6,6 0 0,0 229.18653867,49.79487723 "/>
+                <path d="M232.04220266,54.96336185 A1,1 0 0,0 232.85404717,55.95521145 "/>
+                <path d="M232.85404717,55.95521145 A94.5,94.5 0 0,0 268.40654144,55.95521145 "/>
+                <path d="M268.40654144,55.95521145 A1,1 0 0,0 269.21838594,54.96336185 "/>
+                <path d="M272.07404994,49.79487723 A6,6 0 0,0 269.21838594,54.96336185 "/>
+                <path d="M272.07404994,49.79487723 A1,1 0 0,0 272.51596683,48.68434542 "/>
+                <line x1="272.51596683" y1="48.68434542" x2="258.31934081" y2="-4.29818416"/>
+                <path d="M258.31934081,-4.29818416 A1,1 0 0,0 257.15272482,-5.01901988 "/>
+                <path d="M255.36686623,-4.70480782 A1,1 0 0,0 254.52146397,-3.8482844 "/>
+                <line x1="254.52205913" y1="-3.85272636" x2="254.52146397" y2="-3.8482844"/>
+                <path d="M253.61881383,-2.98939626 A1,1 0 0,0 254.52205913,-3.85272636 "/>
+                <path d="M247.65789841,-2.98797739 A34,34 0 0,0 253.61881383,-2.98939626 "/>
+                <path d="M246.74692786,-3.92749605 A1,1 0 0,0 247.65789841,-2.98797739 "/>
+                <path d="M246.74692786,-3.92749605 A1,1 0 0,0 245.89493009,-4.86006951 "/>
+                <path d="M244.14746438,-5.167875 A32.34622715,32.34622715 0 0,0 245.89493009,-4.86006951 "/>
+                <line x1="228.74462178" y1="48.68434542" x2="242.98111858" y2="-4.44698397"/>
+                <path d="M244.14746438,-5.167875 A1,1 0 0,0 242.98111858,-4.44698397 "/>
+                <line x1="255.36686623" y1="-4.70480782" x2="257.15272482" y2="-5.01901988"/>
+            </g>
+        </g>
+        <g lc:blockname="Smooth Segment">
+            <g lc:layername="Back" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Base Floor" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Base Main" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Base Top" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Front" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Main Ring" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Middle" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+            <g lc:layername="Segment" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1">
+                <path d="M228.74462178,48.68434542 A1,1 0 0,0 229.18653867,49.79487723 "/>
+                <path d="M232.04220266,54.96336185 A6,6 0 0,0 229.18653867,49.79487723 "/>
+                <path d="M232.04220266,54.96336185 A1,1 0 0,0 232.85404717,55.95521145 "/>
+                <path d="M232.85404717,55.95521145 A94.5,94.5 0 0,0 268.40654144,55.95521145 "/>
+                <path d="M268.40654144,55.95521145 A1,1 0 0,0 269.21838594,54.96336185 "/>
+                <path d="M272.07404994,49.79487723 A6,6 0 0,0 269.21838594,54.96336185 "/>
+                <path d="M272.07404994,49.79487723 A1,1 0 0,0 272.51596683,48.68434542 "/>
+                <line x1="272.51596683" y1="48.68434542" x2="258.31934081" y2="-4.29818416"/>
+                <path d="M258.31934081,-4.29818416 A1,1 0 0,0 257.15272482,-5.01901988 "/>
+                <path d="M255.36686623,-4.70480782 A1,1 0 0,0 254.52146397,-3.8482844 "/>
+                <line x1="254.52205913" y1="-3.85272636" x2="254.52146397" y2="-3.8482844"/>
+                <path d="M253.61881383,-2.98939626 A1,1 0 0,0 254.52205913,-3.85272636 "/>
+                <path d="M247.65789841,-2.98797739 A34,34 0 0,0 253.61881383,-2.98939626 "/>
+                <path d="M246.74692786,-3.92749605 A1,1 0 0,0 247.65789841,-2.98797739 "/>
+                <path d="M246.74692786,-3.92749605 A1,1 0 0,0 245.89493009,-4.86006951 "/>
+                <path d="M244.14746438,-5.167875 A32.34622715,32.34622715 0 0,0 245.89493009,-4.86006951 "/>
+                <line x1="228.74462178" y1="48.68434542" x2="242.98111858" y2="-4.44698397"/>
+                <path d="M244.14746438,-5.167875 A1,1 0 0,0 242.98111858,-4.44698397 "/>
+                <line x1="255.36686623" y1="-4.70480782" x2="257.15272482" y2="-5.01901988"/>
+            </g>
+        </g>
+    </g>
+</svg>
