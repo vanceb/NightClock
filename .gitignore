@@ -30,5 +30,8 @@
 # Platformio related files
 .pioenvs
 
+# Mac files
+.DS_Store
+
 # Sensitive files
-credentials.h
+credentials*.h
