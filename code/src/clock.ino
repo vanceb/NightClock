@@ -46,7 +46,8 @@ uint32_t col_background = strip.Color(1,1,1);
 
 uint8_t min_brightness = 20;
 uint32_t last_updated = millis();
-uint8_t disp_update_period = 200;
+uint32_t time_now = millis();
+uint8_t disp_update_period = 40;
 uint8_t ntp_sync_interval = 15;
 
 // Some status variables
@@ -157,12 +158,21 @@ uint32_t mixColors(uint32_t c1, uint32_t c2) {
       g2 = (uint8_t)(c2 >>  8),
       b2 = (uint8_t)c2;
 
+    uint16_t
+      r = r1 + r2,
+      g = g1 + g2,
+      b = b1 + b2;
+      if (r > 255) r = 255;
+      if (g > 255) g = 255;
+      if (b > 255) b = 255;
+    /*
     uint8_t
       r = (uint8_t)((r1 + r2) >> 1),
       g = (uint8_t)((g1 + g2) >> 1),
       b = (uint8_t)((b1 + b2) >> 1);
+    */
 
-    return strip.Color(r,g,b);
+    return strip.Color((uint8_t)r, (uint8_t)g, (uint8_t)b);
 }
 
 uint32_t fadeColor(uint32_t c, uint8_t proportion) {
@@ -265,8 +275,9 @@ void setup() {
 }
 
 void loop() {
-    if(last_updated + disp_update_period < millis()){
-        last_updated = millis();
+    time_now = millis();
+    if(last_updated + disp_update_period < time_now) {
+        last_updated = time_now;
         updateDisplay();
     }
     yield();
