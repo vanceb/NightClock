@@ -35,3 +35,8 @@
 
 # Sensitive files
 credentials*.h
+
+# Kicad
+*.bak
+*.kicad_pcb-bak
+*cache.lib
