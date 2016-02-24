@@ -36,15 +36,15 @@ const int timeZone = 0;     // GMT
 Adafruit_NeoPixel strip = Adafruit_NeoPixel(NEO_NUMPIXELS, NEO_PIN, NEO_GRB + NEO_KHZ800);
 
 // To allow for OTA reconfig of colours later on define a set of variables
-uint32_t col_wifi_down = strip.Color(255,0,0);
-uint32_t col_wifi_up = strip.Color(0,255,0);
-uint32_t col_ntp_fail = strip.Color(255,255,0);
+uint32_t col_wifi_down = strip.Color(64,0,0);
+uint32_t col_wifi_up = strip.Color(0,64,0);
+uint32_t col_ntp_fail = strip.Color(64,64,0);
 uint32_t col_hours = strip.Color(255,0,0);
-uint32_t col_minutes = strip.Color(0,0,255);
-uint32_t col_seconds = strip.Color(0,255,0);
-uint32_t col_background = strip.Color(1,1,1);
+uint32_t col_minutes = strip.Color(0,0,128);
+uint32_t col_seconds = strip.Color(0,64,0);
+uint32_t col_background = strip.Color(0,0,0);
 
-uint8_t min_brightness = 20;
+uint8_t min_brightness = 5;
 uint32_t last_updated = millis();
 uint32_t time_now = millis();
 uint8_t disp_update_period = 40;
@@ -108,21 +108,29 @@ void showTime() {
 void fadeTime() {
     time_t t = now();
     int hr_seg = (hour(t) + 6) % 12;
+    int hr_fraction = minute(t);
     int min_seg = ((minute(t) / 5) + 6) % 12;
+    int min_fraction = (minute(t) % 5)*60 + second(t);
     int sec_seg = ((second(t) / 5) + 6) % 12;
     int sec_fraction = ((second(t) % 5));
     for (int i=0; i<12; i++){
         if (i == hr_seg){
-            strip.setPixelColor(i, col_hours);
+            strip.setPixelColor(i, fadeColor(col_hours, 60 - hr_fraction, 60));
+        }
+        if (i == (hr_seg + 1) % 12){
+            strip.setPixelColor(i, mixColors(strip.getPixelColor(i), fadeColor(col_hours, hr_fraction, 60)));
         }
         if (i == min_seg) {
-            strip.setPixelColor(i, mixColors(strip.getPixelColor(i), col_minutes));
+            strip.setPixelColor(i, mixColors(strip.getPixelColor(i), fadeColor(col_minutes, 300 - min_fraction, 300)));
+        }
+        if (i == (min_seg + 1) % 12) {
+            strip.setPixelColor(i, mixColors(strip.getPixelColor(i), fadeColor(col_minutes, min_fraction, 300)));
         }
         if (i == sec_seg) {
-            strip.setPixelColor(i, mixColors(strip.getPixelColor(i), fadeColor(col_seconds, 5-sec_fraction)));
+            strip.setPixelColor(i, mixColors(strip.getPixelColor(i), fadeColor(col_seconds, 5-sec_fraction, 5)));
         }
         if (((i + 11) % 12) == sec_seg) {
-            strip.setPixelColor(i, mixColors(strip.getPixelColor(i), fadeColor(col_seconds, sec_fraction)));
+            strip.setPixelColor(i, mixColors(strip.getPixelColor(i), fadeColor(col_seconds, sec_fraction, 5)));
         }
         if (strip.getPixelColor(i) == 0) {
             strip.setPixelColor(i, col_background);
@@ -175,11 +183,11 @@ uint32_t mixColors(uint32_t c1, uint32_t c2) {
     return strip.Color((uint8_t)r, (uint8_t)g, (uint8_t)b);
 }
 
-uint32_t fadeColor(uint32_t c, uint8_t proportion) {
+uint32_t fadeColor(uint32_t c, uint16_t proportion, uint16_t divisor) {
     uint8_t
-      r = (uint8_t)((c >> 16) * proportion / 5),
-      g = (uint8_t)((c >> 8) * proportion / 5),
-      b = (uint8_t)(c * proportion / 5);
+      r = (uint8_t)(((c >> 16) & 0xFF) * proportion / divisor),
+      g = (uint8_t)(((c >> 8) & 0xFF) * proportion / divisor),
+      b = (uint8_t)((c & 0xFF) * proportion / divisor);
     return strip.Color(r,g,b);
 }
 
@@ -251,6 +259,7 @@ void setup() {
     pinMode(A0, INPUT);
     // Neopixels Setup
     strip.begin();
+    ambientLight();
     showStatus();
     strip.show();
     // Wifi start
