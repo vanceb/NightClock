@@ -40,3 +40,6 @@ credentials*.h
 *.bak
 *.kicad_pcb-bak
 *cache.lib
+
+# VIM Backups
+*~
