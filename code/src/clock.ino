@@ -49,6 +49,7 @@ uint32_t col_minutes = strip.Color(0,0,192);
 uint32_t col_seconds = strip.Color(0,128,0);
 uint32_t col_background = strip.Color(0,0,0);
 
+uint8_t show_sec_brightness = 64;
 uint8_t min_brightness = 5;
 uint32_t last_updated = millis();
 uint32_t time_now = millis();
@@ -131,11 +132,13 @@ void fadeTime() {
         if (i == (min_seg + 1) % 12) {
             strip.setPixelColor(i, mixColors(strip.getPixelColor(i), fadeColor(col_minutes, min_fraction, 300)));
         }
-        if (i == sec_seg) {
-            strip.setPixelColor(i, mixColors(strip.getPixelColor(i), fadeColor(col_seconds, 5-sec_fraction, 5)));
-        }
-        if (((i + 11) % 12) == sec_seg) {
-            strip.setPixelColor(i, mixColors(strip.getPixelColor(i), fadeColor(col_seconds, sec_fraction, 5)));
+        if (strip.getBrightness() > show_sec_brightness) {
+            if (i == sec_seg) {
+                strip.setPixelColor(i, mixColors(strip.getPixelColor(i), fadeColor(col_seconds, 5-sec_fraction, 5)));
+            }
+            if (((i + 11) % 12) == sec_seg) {
+                strip.setPixelColor(i, mixColors(strip.getPixelColor(i), fadeColor(col_seconds, sec_fraction, 5)));
+            }
         }
         if (strip.getPixelColor(i) == 0) {
             strip.setPixelColor(i, col_background);
