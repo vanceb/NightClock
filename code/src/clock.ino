@@ -36,9 +36,9 @@ const int timeZone = 0;     // GMT
 Adafruit_NeoPixel strip = Adafruit_NeoPixel(NEO_NUMPIXELS, NEO_PIN, NEO_GRB + NEO_KHZ800);
 
 // To allow for OTA reconfig of colours later on define a set of variables
-uint32_t col_wifi_down = strip.Color(64,0,0);
-uint32_t col_wifi_up = strip.Color(0,64,0);
-uint32_t col_ntp_fail = strip.Color(64,64,0);
+uint32_t col_wifi_down = strip.Color(32,0,0);
+uint32_t col_wifi_up = strip.Color(0,32,0);
+uint32_t col_ntp_fail = strip.Color(32,32,0);
 uint32_t col_hours = strip.Color(255,0,0);
 uint32_t col_minutes = strip.Color(0,0,128);
 uint32_t col_seconds = strip.Color(0,64,0);
