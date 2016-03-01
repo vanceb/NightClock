@@ -18,6 +18,11 @@
 //#define SSID "your SSID"
 //#define PASSWD "your wifi password"
 
+// Use WifiManager to allow easier setting of Wifi
+#include <DNSServer.h>
+#include <ESP8266WebServer.h>
+#include <WiFiManager.h>
+
 // Define the parameters for the neopixels
 #define NEO_PIN 13
 #define NEO_NUMPIXELS 13
@@ -36,12 +41,12 @@ const int timeZone = 0;     // GMT
 Adafruit_NeoPixel strip = Adafruit_NeoPixel(NEO_NUMPIXELS, NEO_PIN, NEO_GRB + NEO_KHZ800);
 
 // To allow for OTA reconfig of colours later on define a set of variables
-uint32_t col_wifi_down = strip.Color(32,0,0);
-uint32_t col_wifi_up = strip.Color(0,32,0);
-uint32_t col_ntp_fail = strip.Color(32,32,0);
+uint32_t col_wifi_down = strip.Color(64,0,0);
+uint32_t col_wifi_up = strip.Color(0,64,0);
+uint32_t col_ntp_fail = strip.Color(64,64,0);
 uint32_t col_hours = strip.Color(255,0,0);
-uint32_t col_minutes = strip.Color(0,0,128);
-uint32_t col_seconds = strip.Color(0,64,0);
+uint32_t col_minutes = strip.Color(0,0,192);
+uint32_t col_seconds = strip.Color(0,128,0);
 uint32_t col_background = strip.Color(0,0,0);
 
 uint8_t min_brightness = 5;
@@ -53,9 +58,9 @@ uint8_t ntp_sync_interval = 15;
 // Some status variables
 bool ntp_fail = false;
 
-// Create the wifi object
-ESP8266WiFiMulti wifi;
+// Create the UDP object
 WiFiUDP Udp;
+
 unsigned int localPort = 8888;  // local port to listen for UDP packets
 
 
@@ -69,7 +74,7 @@ void walk(uint32_t c, uint8_t wait){
 }
 
 void showStatus(){
-    switch (wifi.run()){
+    switch (WiFi.status()){
         case WL_CONNECTED :
         if(ntp_fail) {
             strip.setPixelColor(12, col_ntp_fail);
@@ -263,11 +268,16 @@ void setup() {
     showStatus();
     strip.show();
     // Wifi start
+    WiFiManager wifiManager;
+    wifiManager.setDebugOutput(false);
+    wifiManager.autoConnect("VB-CLOCK", "vb-clock");
+    /*
     wifi.addAP(SSID, PASSWD);
     while (wifi.run() != WL_CONNECTED){
         showStatus();
         delay(disp_update_period);
     }
+    */
     // Initialise NTP stuff
     Udp.begin(localPort);
     // This regularly checks NTP to update the time
