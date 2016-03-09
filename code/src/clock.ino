@@ -8,15 +8,7 @@
 
 // https://github.com/esp8266/arduino
 #include <ESP8266WiFi.h>
-#include <ESP8266WiFiMulti.h>
 #include <WiFiUdp.h>
-
-// To avoid uploading my wifi password to github they are defeined in
-// a separate file which is excluded form git in .gitignore
-// If you wish you can comment out the #include and uncomment the lines below
-#include "credentials.h"
-//#define SSID "your SSID"
-//#define PASSWD "your wifi password"
 
 // Use WifiManager to allow easier setting of Wifi
 #include <DNSServer.h>
