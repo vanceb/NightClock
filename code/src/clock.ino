@@ -15,6 +15,10 @@
 #include <ESP8266WebServer.h>
 #include <WiFiManager.h>
 
+// Enable OTA Software updates
+#include <ESP8266mDNS.h>
+#include <ArduinoOTA.h>
+
 // Define the parameters for the neopixels
 #define NEO_PIN 13
 #define NEO_NUMPIXELS 13
@@ -37,8 +41,8 @@ uint32_t col_wifi_down = strip.Color(64,0,0);
 uint32_t col_wifi_up = strip.Color(0,64,0);
 uint32_t col_ntp_fail = strip.Color(64,64,0);
 uint32_t col_hours = strip.Color(255,0,0);
-uint32_t col_minutes = strip.Color(0,0,192);
-uint32_t col_seconds = strip.Color(0,128,0);
+uint32_t col_minutes = strip.Color(0,0,150);
+uint32_t col_seconds = strip.Color(0,100,0);
 uint32_t col_background = strip.Color(0,0,0);
 
 uint8_t show_sec_brightness = 64;
@@ -76,7 +80,7 @@ void showStatus(){
         }
         break;
         default :
-            strip.setPixelColor(12, col_wifi_down);
+        strip.setPixelColor(12, col_wifi_down);
     }
 }
 
@@ -152,32 +156,32 @@ void updateDisplay(){
     ambientLight();
     strip.clear();
     showStatus();
-//    showTime();
+    //    showTime();
     fadeTime();
     strip.show();
 }
 
 uint32_t mixColors(uint32_t c1, uint32_t c2) {
     uint8_t
-      r1 = (uint8_t)(c1 >> 16),
-      g1 = (uint8_t)(c1 >>  8),
-      b1 = (uint8_t)c1,
-      r2 = (uint8_t)(c2 >> 16),
-      g2 = (uint8_t)(c2 >>  8),
-      b2 = (uint8_t)c2;
+    r1 = (uint8_t)(c1 >> 16),
+    g1 = (uint8_t)(c1 >>  8),
+    b1 = (uint8_t)c1,
+    r2 = (uint8_t)(c2 >> 16),
+    g2 = (uint8_t)(c2 >>  8),
+    b2 = (uint8_t)c2;
 
     uint16_t
-      r = r1 + r2,
-      g = g1 + g2,
-      b = b1 + b2;
-      if (r > 255) r = 255;
-      if (g > 255) g = 255;
-      if (b > 255) b = 255;
+    r = r1 + r2,
+    g = g1 + g2,
+    b = b1 + b2;
+    if (r > 255) r = 255;
+    if (g > 255) g = 255;
+    if (b > 255) b = 255;
     /*
     uint8_t
-      r = (uint8_t)((r1 + r2) >> 1),
-      g = (uint8_t)((g1 + g2) >> 1),
-      b = (uint8_t)((b1 + b2) >> 1);
+    r = (uint8_t)((r1 + r2) >> 1),
+    g = (uint8_t)((g1 + g2) >> 1),
+    b = (uint8_t)((b1 + b2) >> 1);
     */
 
     return strip.Color((uint8_t)r, (uint8_t)g, (uint8_t)b);
@@ -185,16 +189,16 @@ uint32_t mixColors(uint32_t c1, uint32_t c2) {
 
 uint32_t fadeColor(uint32_t c, uint16_t proportion, uint16_t divisor) {
     uint8_t
-      r = (uint8_t)(((c >> 16) & 0xFF) * proportion / divisor),
-      g = (uint8_t)(((c >> 8) & 0xFF) * proportion / divisor),
-      b = (uint8_t)((c & 0xFF) * proportion / divisor);
+    r = (uint8_t)(((c >> 16) & 0xFF) * proportion / divisor),
+    g = (uint8_t)(((c >> 8) & 0xFF) * proportion / divisor),
+    b = (uint8_t)((c & 0xFF) * proportion / divisor);
     return strip.Color(r,g,b);
 }
 
 /*
 uint32_t mixColors(uint32_t c1, uint32_t c2, uint32_t c3) {
-    uint32_t part = mixColors(c1, c2);
-    return mixColors(part, c3);
+uint32_t part = mixColors(c1, c2);
+return mixColors(part, c3);
 }
 */
 
@@ -255,24 +259,26 @@ void sendNTPpacket(IPAddress &address)
 
 
 void setup() {
+    // Use Serial for debugging
+    Serial.begin(115200);
+    Serial.println("Booting");
+
     // Setup ADC Input pin
     pinMode(A0, INPUT);
     // Neopixels Setup
     strip.begin();
     ambientLight();
+    // Startup Sequence
+    walk(strip.Color(255,0,150), 160);
+    strip.clear();
+    // Show wifi status
     showStatus();
     strip.show();
     // Wifi start
     WiFiManager wifiManager;
     wifiManager.setDebugOutput(false);
     wifiManager.autoConnect("VB-CLOCK", "vb-clock");
-    /*
-    wifi.addAP(SSID, PASSWD);
-    while (wifi.run() != WL_CONNECTED){
-        showStatus();
-        delay(disp_update_period);
-    }
-    */
+
     // Initialise NTP stuff
     Udp.begin(localPort);
     // This regularly checks NTP to update the time
@@ -286,6 +292,32 @@ void setup() {
     last_updated = millis();
     // Set the sync interval to something more reasonable
     setSyncInterval(ntp_sync_interval);
+
+    // Include some sueful debugging feedback for the OTA programming
+    ArduinoOTA.onStart([]() {
+        Serial.println("Start");
+    });
+    ArduinoOTA.onEnd([]() {
+        Serial.println("End");
+    });
+    ArduinoOTA.onProgress([](unsigned int progress, unsigned int total) {
+        Serial.printf("Progress: %u%%\n", (progress / (total / 100)));
+    });
+    ArduinoOTA.onError([](ota_error_t error) {
+        Serial.printf("Error[%u]: ", error);
+        if (error == OTA_AUTH_ERROR) Serial.println("Auth Failed");
+        else if (error == OTA_BEGIN_ERROR) Serial.println("Begin Failed");
+        else if (error == OTA_CONNECT_ERROR) Serial.println("Connect Failed");
+        else if (error == OTA_RECEIVE_ERROR) Serial.println("Receive Failed");
+        else if (error == OTA_END_ERROR) Serial.println("End Failed");
+    });
+    // Kick-off the OTA update code
+    ArduinoOTA.setHostname("vb-clock");
+    //ArduinoOTA.setPassword((const char *)"vb-clock");
+    ArduinoOTA.begin();
+    Serial.println("Ready");
+    Serial.print("IP address: ");
+    Serial.println(WiFi.localIP());
 }
 
 void loop() {
@@ -294,5 +326,6 @@ void loop() {
         last_updated = time_now;
         updateDisplay();
     }
+    ArduinoOTA.handle();
     yield();
 }
