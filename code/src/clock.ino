@@ -5,6 +5,12 @@
 // https://github.com/PaulStoffregen/Time
 // Platformio lib number 28
 #include <TimeLib.h>
+// Time zone and daylight savings conversion, but cannot be used as-is
+// ESP eeprom library not yet ported, so edited library to remove
+// requirement on that library
+// https://github.com/JChristensen/Timezone
+// If it worked OOTB then would be Platformio lib number 76
+#include <Timezone.h>
 
 // https://github.com/esp8266/arduino
 #include <ESP8266WiFi.h>
@@ -28,6 +34,10 @@ IPAddress timeServer(132, 163, 4, 101); // time-a.timefreq.bldrdoc.gov
 // IPAddress timeServer(132, 163, 4, 102); // time-b.timefreq.bldrdoc.gov
 // IPAddress timeServer(132, 163, 4, 103); // time-c.timefreq.bldrdoc.gov
 
+// Setup timezone and daylight saving correction library
+TimeChangeRule ukGMT = {"GMT", Last, Sun, Oct, 2, 0};
+TimeChangeRule ukBST = {"BST", Last, Sun, Mar, 2, 60};
+Timezone ukTZ(ukGMT, ukBST);
 
 const int timeZone = 0;     // GMT
 //const int timeZone = -5;  // Eastern Standard Time (USA)
@@ -50,7 +60,7 @@ uint8_t min_brightness = 5;
 uint32_t last_updated = millis();
 uint32_t time_now = millis();
 uint8_t disp_update_period = 40;
-uint8_t ntp_sync_interval = 15;
+uint8_t ntp_sync_interval = 60;
 
 // Some status variables
 bool ntp_fail = false;
@@ -108,7 +118,7 @@ void showTime() {
 
 
 void fadeTime() {
-    time_t t = now();
+    time_t t = ukTZ.toLocal(now());
     int hr_seg = (hour(t) + 6) % 12;
     int hr_fraction = minute(t);
     int min_seg = ((minute(t) / 5) + 6) % 12;
@@ -226,7 +236,7 @@ time_t getNtpTime()
             secsSince1900 |= (unsigned long)packetBuffer[42] << 8;
             secsSince1900 |= (unsigned long)packetBuffer[43];
             ntp_fail = false;
-            return secsSince1900 - 2208988800UL + timeZone * SECS_PER_HOUR;
+            return secsSince1900 - 2208988800UL;
         }
     }
     ntp_fail = true;
