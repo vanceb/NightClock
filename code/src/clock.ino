@@ -8,8 +8,11 @@
 // Time zone and daylight savings conversion, but cannot be used as-is
 // ESP eeprom library not yet ported, so edited library to remove
 // requirement on that library
+// Original Library
 // https://github.com/JChristensen/Timezone
 // If it worked OOTB then would be Platformio lib number 76
+// Forked version
+// https://github.com/vanceb/Timezone
 #include <Timezone.h>
 
 // https://github.com/esp8266/arduino
