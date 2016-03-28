@@ -5,6 +5,7 @@
 // https://github.com/PaulStoffregen/Time
 // Platformio lib number 28
 #include <TimeLib.h>
+
 // Time zone and daylight savings conversion, but cannot be used as-is
 // ESP eeprom library not yet ported, so edited library to remove
 // requirement on that library
@@ -42,11 +43,7 @@ TimeChangeRule ukGMT = {"GMT", Last, Sun, Oct, 2, 0};
 TimeChangeRule ukBST = {"BST", Last, Sun, Mar, 2, 60};
 Timezone ukTZ(ukGMT, ukBST);
 
-const int timeZone = 0;     // GMT
-//const int timeZone = -5;  // Eastern Standard Time (USA)
-//const int timeZone = -4;  // Eastern Daylight Time (USA)
-//const int timeZone = -8;  // Pacific Standard Time (USA)
-//const int timeZone = -7;  // Pacific Daylight Time (USA)// Create the Neopixel object
+// Create the Neopixel object
 Adafruit_NeoPixel strip = Adafruit_NeoPixel(NEO_NUMPIXELS, NEO_PIN, NEO_GRB + NEO_KHZ800);
 
 // To allow for OTA reconfig of colours later on define a set of variables
