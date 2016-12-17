@@ -34,7 +34,9 @@
 #define NEO_NUMPIXELS 13
 
 // NTP Servers:
-IPAddress timeServer(132, 163, 4, 101); // time-a.timefreq.bldrdoc.gov
+IPAddress timeServerIP; // time.nist.gov NTP server address
+const char* ntpServerName = "1.uk.pool.ntp.org";
+//IPAddress timeServer(132, 163, 4, 101); // time-a.timefreq.bldrdoc.gov
 // IPAddress timeServer(132, 163, 4, 102); // time-b.timefreq.bldrdoc.gov
 // IPAddress timeServer(132, 163, 4, 103); // time-c.timefreq.bldrdoc.gov
 
@@ -48,11 +50,11 @@ Adafruit_NeoPixel strip = Adafruit_NeoPixel(NEO_NUMPIXELS, NEO_PIN, NEO_GRB + NE
 
 // To allow for OTA reconfig of colours later on define a set of variables
 uint32_t col_wifi_down = strip.Color(64,0,0);
-uint32_t col_wifi_up = strip.Color(0,64,0);
+uint32_t col_wifi_up = strip.Color(128,128,32);
 uint32_t col_ntp_fail = strip.Color(64,64,0);
-uint32_t col_hours = strip.Color(255,0,0);
-uint32_t col_minutes = strip.Color(0,0,150);
-uint32_t col_seconds = strip.Color(0,100,0);
+uint32_t col_hours = strip.Color(153,0,0);
+uint32_t col_minutes = strip.Color(255,92,0);
+uint32_t col_seconds = strip.Color(128,32,0);
 uint32_t col_background = strip.Color(0,0,0);
 
 uint8_t show_sec_brightness = 64;
@@ -61,6 +63,11 @@ uint32_t last_updated = millis();
 uint32_t time_now = millis();
 uint8_t disp_update_period = 40;
 uint8_t ntp_sync_interval = 60;
+
+// Manage brightness with hysteresis
+#define GO_BRIGHT 600
+#define GO_DARK 700
+bool isDark = false;
 
 // Some status variables
 bool ntp_fail = false;
@@ -153,13 +160,27 @@ void fadeTime() {
 }
 
 void ambientLight(){
+    /*
     // Read LDR Value
-    uint8_t brightness = (uint8_t)((1024 - analogRead(A0)) / 4);
-    if(brightness < min_brightness) {
-        brightness = min_brightness;
-    }
+    uint16_t light = analogRead(A0);
+    uint8_t brightness = map(light, 0, 1023, 255, 0);
+    brightness = constrain(brightness, min_brightness, 255);
     //Set Brightness of the Neopixels
-    strip.setBrightness(brightness);
+    strip.setBrightness((uint8_t)brightness);
+    */
+    uint16_t light = analogRead(A0);
+    uint8_t brightness;
+    if (light > GO_DARK && !isDark) {
+        isDark = true;
+    } else if (light < GO_BRIGHT && isDark) {
+        isDark = false;
+    }
+    if (isDark) {
+        brightness = 32;
+    } else {
+        brightness = 255;
+    }
+    strip.setBrightness((uint8_t)brightness);
 }
 
 void updateDisplay(){
@@ -221,8 +242,10 @@ byte packetBuffer[NTP_PACKET_SIZE]; //buffer to hold incoming & outgoing packets
 time_t getNtpTime()
 {
     while (Udp.parsePacket() > 0) ; // discard any previously received packets
+    //get a random server from the pool
+    WiFi.hostByName(ntpServerName, timeServerIP);
     Serial.println("Transmit NTP Request");
-    sendNTPpacket(timeServer);
+    sendNTPpacket(timeServerIP);
     uint32_t beginWait = millis();
     while (millis() - beginWait < 1500) {
         int size = Udp.parsePacket();
@@ -293,7 +316,7 @@ void setup() {
     Udp.begin(localPort);
     // This regularly checks NTP to update the time
     // Set the syn interval to 5 seconds until we manage to set the time
-    setSyncInterval(5);
+    setSyncInterval(60);
     setSyncProvider(getNtpTime);
     while(timeStatus() == timeNotSet){
         showStatus();
