@@ -49,20 +49,21 @@ Timezone ukTZ(ukGMT, ukBST);
 Adafruit_NeoPixel strip = Adafruit_NeoPixel(NEO_NUMPIXELS, NEO_PIN, NEO_GRB + NEO_KHZ800);
 
 // To allow for OTA reconfig of colours later on define a set of variables
-uint32_t col_wifi_down = strip.Color(64,0,0);
-uint32_t col_wifi_up = strip.Color(128,128,32);
+uint32_t col_wifi_down = strip.Color(128,0,0);
+uint32_t col_wifi_up = strip.Color(0,128,0);
 uint32_t col_ntp_fail = strip.Color(64,64,0);
-uint32_t col_hours = strip.Color(153,0,0);
-uint32_t col_minutes = strip.Color(255,92,0);
-uint32_t col_seconds = strip.Color(128,32,0);
+uint32_t col_hours = strip.Color(255,0,0);
+uint32_t col_minutes = strip.Color(0,0,255);
+uint32_t col_seconds = strip.Color(0,255,0);
 uint32_t col_background = strip.Color(0,0,0);
 
 uint8_t show_sec_brightness = 64;
-uint8_t min_brightness = 5;
+uint8_t min_brightness = 3;
+uint8_t max_brightness = 255;
 uint32_t last_updated = millis();
 uint32_t time_now = millis();
 uint8_t disp_update_period = 40;
-uint8_t ntp_sync_interval = 60;
+uint8_t ntp_sync_interval = 3600;
 
 // Manage brightness with hysteresis
 #define GO_BRIGHT 600
@@ -176,9 +177,9 @@ void ambientLight(){
         isDark = false;
     }
     if (isDark) {
-        brightness = 32;
+        brightness = min_brightness;
     } else {
-        brightness = 255;
+        brightness = max_brightness;
     }
     strip.setBrightness((uint8_t)brightness);
 }
