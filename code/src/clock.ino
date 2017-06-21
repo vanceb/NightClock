@@ -34,7 +34,8 @@
 #define NEO_NUMPIXELS 13
 
 // Enum and variable to hold the status
-enum status {WIFI_UP, WIFI_DOWN, WIFI_CFG, NTP_FAIL}, clock_status = WIFI_DOWN;
+enum status {WIFI_UP, WIFI_DOWN, WIFI_CFG, NTP_FAIL};
+status clock_status = WIFI_DOWN;
 
 // NTP Servers:
 IPAddress timeServerIP; // time.nist.gov NTP server address
