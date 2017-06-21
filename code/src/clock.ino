@@ -33,6 +33,9 @@
 #define NEO_PIN 13
 #define NEO_NUMPIXELS 13
 
+// Enum and variable to hold the status
+enum status {WIFI_UP, WIFI_DOWN, WIFI_CFG, NTP_FAIL}, clock_status = WIFI_DOWN;
+
 // NTP Servers:
 IPAddress timeServerIP; // time.nist.gov NTP server address
 const char* ntpServerName = "1.uk.pool.ntp.org";
@@ -51,6 +54,7 @@ Adafruit_NeoPixel strip = Adafruit_NeoPixel(NEO_NUMPIXELS, NEO_PIN, NEO_GRB + NE
 // To allow for OTA reconfig of colours later on define a set of variables
 uint32_t col_wifi_down = strip.Color(128,0,0);
 uint32_t col_wifi_up = strip.Color(0,128,0);
+uint32_t col_wifi_cfg = strip.Color(0,0,128);
 uint32_t col_ntp_fail = strip.Color(64,64,0);
 uint32_t col_hours = strip.Color(255,0,0);
 uint32_t col_minutes = strip.Color(0,0,255);
@@ -72,6 +76,7 @@ bool isDark = false;
 
 // Some status variables
 bool ntp_fail = false;
+bool wifi_cfg = false;
 
 // Create the UDP object
 WiFiUDP Udp;
@@ -89,16 +94,24 @@ void walk(uint32_t c, uint8_t wait){
 }
 
 void showStatus(){
-    switch (WiFi.status()){
-        case WL_CONNECTED :
-        if(ntp_fail) {
-            strip.setPixelColor(12, col_ntp_fail);
-        } else {
-            strip.setPixelColor(12, col_wifi_up);
+    if (wifi_cfg) {
+        clock_status = WIFI_CFG;
+        strip.setPixelColor(12, col_wifi_cfg);
+    } else {
+        switch (WiFi.status()){
+            case WL_CONNECTED :
+            if(ntp_fail) {
+                clock_status = NTP_FAIL;
+                strip.setPixelColor(12, col_ntp_fail);
+            } else {
+                clock_status = WIFI_UP;
+                strip.setPixelColor(12, col_wifi_up);
+            }
+            break;
+            default :
+            strip.setPixelColor(12, col_wifi_down);
+            clock_status = WIFI_DOWN;
         }
-        break;
-        default :
-        strip.setPixelColor(12, col_wifi_down);
     }
 }
 
@@ -305,14 +318,17 @@ void setup() {
     // Startup Sequence
     walk(strip.Color(255,0,150), 160);
     strip.clear();
-    // Show wifi status
-    showStatus();
-    strip.show();
     // Wifi start
     WiFiManager wifiManager;
     wifiManager.setDebugOutput(false);
     // Set timeout to exit the config portal after 3 minutes
     wifiManager.setConfigPortalTimeout(180);
+
+    // Set status to wifi_cfg
+    wifi_cfg = true;
+    // Show wifi status
+    showStatus();
+    strip.show();
 
     // Loop around until we get wifi connectivity
     while (WiFi.status() != WL_CONNECTED) {
@@ -320,6 +336,12 @@ void setup() {
         // If this fails then open the config portal for 3 minutes
         wifiManager.autoConnect("VB-CLOCK", "vb-clock");
     }
+
+    // Set status to wifi_cfg
+    wifi_cfg = false;
+    // Show wifi status
+    showStatus();
+    strip.show();
 
     // Initialise NTP stuff
     Udp.begin(localPort);
