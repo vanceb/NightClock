@@ -311,13 +311,21 @@ void setup() {
     // Wifi start
     WiFiManager wifiManager;
     wifiManager.setDebugOutput(false);
-    wifiManager.autoConnect("VB-CLOCK", "vb-clock");
+    // Set timeout to exit the config portal after 3 minutes
+    wifiManager.setConfigPortalTimeout(180);
+
+    // Loop around until we get wifi connectivity
+    while (WiFi.status() != WL_CONNECTED) {
+        // Try to autoconnect to last wifi network
+        // If this fails then open the config portal for 3 minutes
+        wifiManager.autoConnect("VB-CLOCK", "vb-clock");
+    }
 
     // Initialise NTP stuff
     Udp.begin(localPort);
     // This regularly checks NTP to update the time
-    // Set the syn interval to 5 seconds until we manage to set the time
-    setSyncInterval(60);
+    // Set the sync interval to 15 seconds until we manage to set the time
+    setSyncInterval(15);
     setSyncProvider(getNtpTime);
     while(timeStatus() == timeNotSet){
         showStatus();
@@ -329,10 +337,10 @@ void setup() {
 
     // Include some sueful debugging feedback for the OTA programming
     ArduinoOTA.onStart([]() {
-        Serial.println("Start");
+        Serial.println("OTA Start");
     });
     ArduinoOTA.onEnd([]() {
-        Serial.println("End");
+        Serial.println("OTA End");
     });
     ArduinoOTA.onProgress([](unsigned int progress, unsigned int total) {
         Serial.printf("Progress: %u%%\n", (progress / (total / 100)));
